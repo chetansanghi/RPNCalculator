@@ -38,7 +38,7 @@ public class TestRPN extends TestCase {
 		StringBuilder input = new StringBuilder();
 		input.append("1");
 		input.append(",");
-		input.append("2");
+		//input.append("2");
 		input.append(",");
 		input.append("+");
 		assertEquals(new Double(3.0), rpnCalculator.calculateResult(input.toString()));
