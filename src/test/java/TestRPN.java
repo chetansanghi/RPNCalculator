@@ -37,7 +37,7 @@ public class TestRPN extends TestCase {
 	public void testForTwoValuesAndAdditionOperand()throws Exception{
 		StringBuilder input = new StringBuilder();
 		input.append("1");
-		input.append(",");
+		//input.append(",");
 		input.append("2");
 		input.append(",");
 		input.append("+");
