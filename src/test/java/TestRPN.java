@@ -1,9 +1,9 @@
-package test;
+package test.java;
 
 import junit.framework.TestCase;
 import main.java.RPNCalculator;
 
-public class RPNCalculatorTest extends TestCase {
+public class TestRPN extends TestCase {
 	
 	RPNCalculator rpnCalculator = null;
 	
@@ -11,7 +11,6 @@ public class RPNCalculatorTest extends TestCase {
 		rpnCalculator = new RPNCalculator();
 	}
 	
-
 	public void testCalculateResultEmpty() throws Exception{
 		StringBuilder input = new StringBuilder();
 		assertEquals(Double.MIN_VALUE, rpnCalculator.calculateResult(input.toString()));

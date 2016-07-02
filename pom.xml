@@ -3,16 +3,66 @@
   <groupId>RPNCalculator</groupId>
   <artifactId>RPNCalculator</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <build>
-    <sourceDirectory>src</sourceDirectory>
-    <plugins>
-    </plugins>
-  </build>
-  <dependencies>
+  <packaging>jar</packaging>  
+<dependencies>
   	<dependency>
   		<groupId>junit</groupId>
   		<artifactId>junit</artifactId>
   		<version>4.12</version>
   	</dependency>
+ <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-library</artifactId>
+            <version>1.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-core</artifactId>
+            <version>1.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-all</artifactId>
+            <version>1.3</version>
+        </dependency>  	
   </dependencies>
+    
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+           <groupId>org.apache.maven.plugins</groupId>
+           <artifactId>maven-compiler-plugin</artifactId>
+           <configuration>
+               <source>1.5</source>
+               <target>1.5</target>
+           </configuration>
+        </plugin>
+
+		<plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-surefire-plugin</artifactId>
+		<version>2.11</version>
+		<dependencies>
+		 <dependency>
+		  <groupId>org.apache.maven.surefire</groupId>
+		  <artifactId>surefire-junit47</artifactId>
+		  <version>2.19.1</version>
+		 </dependency>
+		</dependencies>
+<!-- 
+		<configuration>
+		<testSourceDirectory>**\test\java</testSourceDirectory>   
+		<testOutputDirectory>target\test-classes</testOutputDirectory>
+		 <includes>
+		  <include>**/RPNCalculatorTest.class</include>
+		 </includes>
+		</configuration>
+ -->		
+		</plugin>  
+    </plugins>
+  </build>
+  
+  
+  
 </project>
