@@ -3,7 +3,7 @@ package test;
 import junit.framework.TestCase;
 import main.java.RPNCalculator;
 
-public class RPNCalculatorTestCase extends TestCase {
+public class TestRunnerRPNCalculator extends TestCase {
 	
 	RPNCalculator rpnCalculator = null;
 	
