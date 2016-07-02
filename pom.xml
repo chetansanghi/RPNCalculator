@@ -26,11 +26,6 @@
 		  <version>2.19.1</version>
 		 </dependency>
 		</dependencies>
- 
-		<configuration>
-		<testFailureIgnore>true</testFailureIgnore>
-		</configuration>
-		
 		</plugin>  
     </plugins>
   </build>
