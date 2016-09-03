@@ -30,8 +30,8 @@ public class TestRPN extends TestCase {
 	
 	public void testForOneValueOnly() throws Exception{
 		StringBuilder input = new StringBuilder();
-		input.append("2");
-		assertEquals(new Double(2.0), rpnCalculator.calculateResult(input.toString()));		
+		input.append("3");
+		assertEquals(new Double(3.0), rpnCalculator.calculateResult(input.toString()));		
 	}
 	
 	public void testForTwoValuesAndAdditionOperand()throws Exception{
