@@ -2,6 +2,7 @@ package main.java;
 
 import main.java.RPN.Operations;
 
+//Class for Performing Addition
 public class Addition extends Operations{
 
 	@Override
