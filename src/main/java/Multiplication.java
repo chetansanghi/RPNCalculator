@@ -3,6 +3,7 @@ package main.java;
 import main.java.RPN.Operations;
 
 //Class for Multiplication Operation
+//Now would try rebase instead of git pull origin master
 public class Multiplication extends Operations{
 
 	@Override
