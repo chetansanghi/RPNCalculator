@@ -13,6 +13,8 @@ public class Division extends Operations{
 		if( operand1.equals(new Double(0.0))){
 			throw new IllegalStateException("Dividend operator is ZERO.");
 		}		
+
+                //Finally rebase v/s pull making sense for history log
 		
 		if(operand1 != null && operand2 != null){
 			return (operand2 / operand1);
