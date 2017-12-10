@@ -7,7 +7,7 @@ import main.java.RPN.Operations;
 public class Division extends Operations{
 
 	@Override
-	//This method is t 
+	//This method is to calculate division of Double operand
 	public Double calculate(Double operand1, Double operand2) throws Exception {
 		
 		if( operand1.equals(new Double(0.0))){
