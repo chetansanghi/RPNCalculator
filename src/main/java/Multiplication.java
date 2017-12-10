@@ -12,6 +12,7 @@ public class Multiplication extends Operations{
 		if(operand1 != null && operand2 != null){
 			return (operand1 * operand2);
 		}
+		//Return response
 		return null;
 	}
 }
